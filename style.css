@@ -1,0 +1,171 @@
+:root{
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+@font-face {
+    font-family:'italic' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/RedHatDisplay-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'variable';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'black';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-Black.ttf);
+}
+@font-face {
+    font-family: 'blackitalic';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-BlackItalic.ttf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: 'bolditalic';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-ExtraBold.ttf);
+}
+@font-face {
+    font-family:'extrabold' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-ExtraBold.ttf);
+}
+@font-face {
+    font-family:'extrabolditalic' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'italic';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-Italic.ttf);
+}
+@font-face {
+    font-family:'light' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-Light.ttf);
+}
+@font-face {
+    font-family: 'lightitalic';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'medium';
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-Medium.ttf);
+}
+@font-face {
+    font-family:'mediumitalic' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-MediumItalic.ttf);
+}
+@font-face {
+    font-family:'regular' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-Regular.ttf);
+}
+@font-face {
+    font-family:'semibold' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-SemiBold.ttf);
+}
+@font-face {
+    font-family:'semibolditalic' ;
+    src: url(Red_Hat_Display,Space_Mono/Red_Hat_Display/static/RedHatDisplay-SemiBoldItalic.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'italic','semibolditalic','semibold','regular','mediumitalic','medium','lightitalic','light','italic','extrabolditalic','extrabold','bolditalic','bold','blackitalic','black','variable';
+}
+body{
+    height: 100vh;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 180vh;
+    display: flex;
+    justify-content: center;
+    text-align: center ;
+}
+body main .card{
+    background: rgb(253, 253, 253);
+    border-radius: 15px;
+    width: 350px;
+    overflow: hidden;
+    text-align: center;
+    margin: 30% auto;
+    height: 75%;
+    border: none;
+}
+body main .card .img img{
+    width: 100%;
+    object-fit: cover;
+}
+main .content{
+    margin: 30px;
+}
+main .content h1{
+    margin: 30px;
+    font-size: 1.7rem;
+}
+main .content p{
+    font-size: 1.1rem;
+    color:var(--Desaturatedblue);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+main .plan{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--Verypaleblue);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 40px 30px;
+}
+main .plan .plan-img img{
+    width: 55px;
+    margin-left: 10px;
+}
+main .plan .plan-price p{
+    font-weight: bold;
+    margin: 7px 10px;
+    font-size: 17px;
+}
+main .plan .plan-price span{
+    margin-right: 10px;
+    color: var(--Desaturatedblue);
+    font-size: 15px;
+}
+main .plan .plan-link{
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 15px 5px;
+    color: var(--Brightblue);
+    font-weight: bold;
+}
+main .card .buttons #payment,main .card .buttons #cancel{
+    width: 85%;
+    padding: 12px;
+    color: var(--Desaturatedblue);
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom:30px;
+    background-color: white;
+}
+main .card .buttons #payment:hover,main .card .buttons #cancel:hover{
+    background-color: var(--Brightblue);
+    color: white;
+}
+
+@media(min-width:800px){
+body{
+    height: 150vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 410vh;
+    display: flex;
+    justify-content: center;
+    text-align: center ;
+}
+}
